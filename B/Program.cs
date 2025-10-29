@@ -9,6 +9,7 @@ builder.Services.GeneralHttpExtension();
 
 builder.Services.RegisterServices();
 
+
 var app = builder.Build();
 
 app.UseMiddleware<GlobalExceptionMiddleWare>();
