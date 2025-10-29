@@ -1,7 +1,7 @@
 # Docs for the Azure Web Apps Deploy action: https://github.com/Azure/webapps-deploy
 # More GitHub Actions for Azure: https://github.com/Azure/actions
 
-name: Build and deploy ASP.Net Core app to Azure Web App - afiorelliMinimalAPI
+name: Build and deploy ASP.Net Core app to Azure Web App - afiorellicicid
 
 on:
   push:
@@ -51,15 +51,15 @@ jobs:
       - name: Login to Azure
         uses: azure/login@v2
         with:
-          client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID_E15C23765CA24155BB8150D121382013 }}
-          tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_EF2C1187B2B64D3F90D008E22BD00372 }}
-          subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_3F730F70E64E47A6B85E3336D649BEEC }}
+          client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID_FB537D0C1009454391FFE3B4280970EF }}
+          tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_D7028348E131495B8B1447209084D454 }}
+          subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_B7B7FF02F4F6489BA3D6C5BBE5F3E60B }}
 
       - name: Deploy to Azure Web App
         id: deploy-to-webapp
         uses: azure/webapps-deploy@v3
         with:
-          app-name: 'afiorelliMinimalAPI'
+          app-name: 'afiorellicicid'
           slot-name: 'Production'
           package: .
           
